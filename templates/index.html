@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SecureCheck Pro | Password Security</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Connect JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"
+            defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            🛡️ SecureCheck <span>Pro</span>
+        </div>
+
+        <div class="security-tag">
+            ● SECURITY TOOL
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="hero">
+
+            <div class="icon">🔐</div>
+
+            <h1>Password Strength Checker</h1>
+
+            <p>
+                Check your password strength and discover
+                how to improve your password security.
+            </p>
+
+        </section>
+
+
+        <!-- Password Checker -->
+        <section class="checker-card">
+
+            <h2>Test Your Password</h2>
+
+            <label for="password">
+                Enter a test password
+            </label>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password..."
+                    autocomplete="off"
+                >
+
+                <button type="button" id="togglePassword">
+                    Show
+                </button>
+
+            </div>
+
+
+            <!-- Check Button -->
+            <button
+                type="button"
+                id="checkButton"
+                class="check-button">
+
+                Check Password →
+
+            </button>
+
+
+            <!-- Error Message -->
+            <p id="errorMessage" class="error"></p>
+
+
+            <!-- Result Section -->
+            <div id="resultSection" class="result hidden">
+
+                <h3>Password Security Report</h3>
+
+                <div class="score-row">
+
+                    <div>
+                        <p class="small-text">Security Score</p>
+                        <h2 id="score">0/100</h2>
+                    </div>
+
+                    <div>
+                        <p class="small-text">Strength</p>
+                        <h2 id="strength">-</h2>
+                    </div>
+
+                </div>
+
+
+                <!-- Progress Bar -->
+                <div class="progress-background">
+
+                    <div
+                        id="progressBar"
+                        class="progress-bar">
+                    </div>
+
+                </div>
+
+
+                <!-- Security Checklist -->
+                <h3>Security Checklist</h3>
+
+                <ul class="checklist">
+
+                    <li id="lengthCheck">
+                        ○ At least 8 characters
+                    </li>
+
+                    <li id="upperCheck">
+                        ○ Uppercase letters
+                    </li>
+
+                    <li id="lowerCheck">
+                        ○ Lowercase letters
+                    </li>
+
+                    <li id="numberCheck">
+                        ○ Numbers
+                    </li>
+
+                    <li id="specialCheck">
+                        ○ Special characters
+                    </li>
+
+                </ul>
+
+
+                <!-- Suggestions -->
+                <h3>Suggestions</h3>
+
+                <ul id="suggestions"></ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- Security Tips -->
+        <section class="tips">
+
+            <h2>Tips for Better Password Security</h2>
+
+            <div class="tip-card">
+                <span>🔑</span>
+                <p>Use long and unique passwords.</p>
+            </div>
+
+            <div class="tip-card">
+                <span>🔠</span>
+                <p>Combine uppercase and lowercase letters.</p>
+            </div>
+
+            <div class="tip-card">
+                <span>🔢</span>
+                <p>Include numbers and special characters.</p>
+            </div>
+
+            <div class="tip-card">
+                <span>🚫</span>
+                <p>Avoid common passwords.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SecureCheck Pro |
+            Educational Security Tool
+        </p>
+
+        <p>
+            Passwords are not intentionally stored by this application.
+        </p>
+
+    </footer>
+
+</body>
+</html>
