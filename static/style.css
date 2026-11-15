@@ -1,0 +1,293 @@
+
+/* =================================
+   SECURECHECK PRO - MAIN DESIGN
+================================= */
+
+/* 1. Basic settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d1c;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+
+/* 2. Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    border-bottom: 1px solid #202a40;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #8b5cf6;
+}
+
+.security-tag {
+    color: #22c55e;
+    font-size: 12px;
+    border: 1px solid #166534;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+
+/* 3. Main container */
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 50px auto;
+}
+
+
+/* 4. Hero section */
+
+.hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+
+/* 5. Password checker card */
+
+.checker-card {
+    background: #111a2e;
+    border: 1px solid #293651;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.checker-card h2 {
+    margin-bottom: 25px;
+}
+
+.checker-card label {
+    display: block;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+
+
+/* 6. Password input */
+
+.password-box {
+    display: flex;
+    gap: 10px;
+    background: #080d1c;
+    border: 1px solid #35435f;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.password-box input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 14px;
+    color: white;
+    font-size: 15px;
+}
+
+.password-box button {
+    background: #293651;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+/* 7. Check password button */
+
+.check-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background: linear-gradient(90deg, #6d5dfc, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(109, 93, 252, 0.35);
+}
+
+
+/* 8. Result section */
+
+.result {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #35435f;
+}
+
+.result h3 {
+    margin-bottom: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.score-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.small-text {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+
+/* 9. Progress bar */
+
+.progress-background {
+    background: #293651;
+    height: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #22c55e;
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+
+/* 10. Security checklist */
+
+.checklist {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.checklist li {
+    padding: 10px 0;
+    color: #cbd5e1;
+    border-bottom: 1px solid #293651;
+}
+
+
+/* 11. Error messages */
+
+.error {
+    color: #f87171;
+    margin-top: 12px;
+}
+
+
+/* 12. Security tips */
+
+.tips {
+    margin-top: 45px;
+}
+
+.tips h2 {
+    margin-bottom: 20px;
+}
+
+.tip-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #111a2e;
+    border: 1px solid #293651;
+    padding: 17px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: #cbd5e1;
+}
+
+.tip-card span {
+    font-size: 22px;
+}
+
+
+/* 13. Footer */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    padding: 25px;
+    line-height: 2;
+    border-top: 1px solid #202a40;
+}
+
+
+/* 14. Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .checker-card {
+        padding: 22px;
+    }
+
+    .score-row {
+        gap: 15px;
+    }
+}
